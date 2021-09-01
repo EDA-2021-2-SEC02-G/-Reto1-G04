@@ -71,7 +71,7 @@ while True:
         controller.lastObras(catalog)
 
         print("\nUltimos 3 artistas: ")
-        #controller.lastArtistas(catalog)
+        controller.lastArtistas(catalog)
 
 
     else:

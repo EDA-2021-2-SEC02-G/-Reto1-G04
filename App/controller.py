@@ -66,7 +66,9 @@ def lastObras(catalog):
 
     model.ultimosDatos(catalog)
 
-#def lastArtistas(catalog):
+def lastArtistas(catalog):
+    
+    model.ultimosArtistas(catalog)
 
 
 

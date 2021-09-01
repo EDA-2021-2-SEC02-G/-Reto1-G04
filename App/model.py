@@ -67,8 +67,11 @@ def ultimosDatos(catalog):
 
         print(lt.getElement(catalog['obras'],x)['Title'])
 
-#def ultimosArtistas(catalog):
 
+def ultimosArtistas(catalog):
+    for x in range(lt.size(catalog['artistas']) -2, lt.size(catalog['artistas']) + 1):
+
+        print(lt.getElement(catalog['artistas'],x)['DisplayName'])
 
    
 
