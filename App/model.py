@@ -61,6 +61,27 @@ def addArtistas(catalog,artista):
 
     lt.addLast(catalog['artistas'],artista)
 
+def ultimosDatos(catalog):
+
+    for x in range(lt.size(catalog['obras']) -2, lt.size(catalog['obras']) +1):
+
+        print(lt.getElement(catalog['obras'],x)['Title'])
+
+#def ultimosArtistas(catalog):
+
+
+   
+
+
+
+
+
+    
+
+
+
+
+
 
 
     

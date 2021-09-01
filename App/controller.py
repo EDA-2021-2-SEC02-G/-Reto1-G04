@@ -62,6 +62,16 @@ def loadArtistas(catalog):
     for artista in input_file:
         model.addArtistas(catalog,artista)
 
+def lastObras(catalog):
+
+    model.ultimosDatos(catalog)
+
+#def lastArtistas(catalog):
+
+
+
+    
+
 
 # Funciones de ordenamiento
 

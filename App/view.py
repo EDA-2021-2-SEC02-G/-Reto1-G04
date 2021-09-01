@@ -65,7 +65,14 @@ while True:
 
         print("Obras cargadas: " + str(lt.size(catalog['obras'])))
 
-        print("Artistas: " + str(lt.size(catalog['artistas']))) 
+        print("Artistas: " + str(lt.size(catalog['artistas'])))
+
+        print("\nUltimas 3 obras:")
+        controller.lastObras(catalog)
+
+        print("\nUltimos 3 artistas: ")
+        #controller.lastArtistas(catalog)
+
 
     else:
          sys.exit(0)
