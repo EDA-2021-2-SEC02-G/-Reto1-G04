@@ -36,8 +36,43 @@ los mismos.
 """
 
 # Construccion de modelos
+def newCatalog():
+    
+    catalog = {'obras': None,
+               'artistas': None}
+
+    catalog['obras'] = lt.newList()
+
+    catalog['artistas'] = lt.newList('ARRAY_LIST',cmpfunction = None)
+
+    return catalog
 
 # Funciones para agregar informacion al catalogo
+
+def addObra(catalog,obra):
+
+    # Se adiciona la obra a la lista de obras
+
+    lt.addLast(catalog['obras'],obra)
+
+def addArtistas(catalog,artista):
+
+    # Se adiciona la obra a la lista de obras
+
+    lt.addLast(catalog['artistas'],artista)
+
+
+
+    
+
+
+
+
+
+
+
+
+
 
 # Funciones para creacion de datos
 

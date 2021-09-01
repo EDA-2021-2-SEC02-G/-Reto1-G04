@@ -20,6 +20,7 @@
  * along withthis program.  If not, see <http://www.gnu.org/licenses/>.
  """
 
+from controller import loadData
 import config as cf
 import sys
 import controller
@@ -37,10 +38,18 @@ operación solicitada
 def printMenu():
     print("Bienvenido")
     print("1- Cargar información en el catálogo")
-    print("2- ")
+    print("2- Mostrar lista cronologica de los artistas ")
+    print("3- Mostrar lista cronologica de las adquisiciones")
+    print("4- Clasificar las obras por tecnica")
+    print("5- Clasificar obras por nacionalidad")
+    print("6- Transportar obras de un departamento")
+    print("7- Nueva exposicion (Bono)")
 
-catalog = None
+#catalog = None
 
+def initCatalog():
+
+    return controller.initCatalog()
 """
 Menu principal
 """
@@ -50,9 +59,14 @@ while True:
     if int(inputs[0]) == 1:
         print("Cargando información de los archivos ....")
 
-    elif int(inputs[0]) == 2:
-        pass
+        catalog = initCatalog()
+
+        loadData(catalog)
+
+        print("Obras cargadas: " + str(lt.size(catalog['obras'])))
+
+        print("Artistas: " + str(lt.size(catalog['artistas']))) 
 
     else:
-        sys.exit(0)
+         sys.exit(0)
 sys.exit(0)
